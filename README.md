@@ -1,10 +1,9 @@
-fluent-plugin-nats
-==================
+# Fluent Plugin NATS
+
+[![Build Status](https://travis-ci.org/4lie/fluent-plugin-nats.svg?branch=master)](https://travis-ci.org/cloudfoundry-community/fluent-plugin-nats)
 
 [NATS](https://github.com/derekcollison/nats) plugin for
-[fluentd](https://github.com/fluent/fluentd) Event Collector
-
-[![Build Status](https://travis-ci.org/cloudfoundry-community/fluent-plugin-nats.svg?branch=master)](https://travis-ci.org/cloudfoundry-community/fluent-plugin-nats)
+[fluentd](https://github.com/fluent/fluentd) Event Collector.
 
 ## Requirements
 
@@ -13,7 +12,8 @@ fluent-plugin-nats
 | >= 1.0.0           | >= v0.14.20 | >= 2.1 |
 | < 1.0.0            | >= v0.12.0  | >= 1.9 |
 
-# Getting Started
+##  Getting Started
+
 Setup the NATS input:
 
 ~~~~~
@@ -37,15 +37,15 @@ Setup the match output:
   </match>
 ~~~~
 
-# Configuration
+## Configuration
 
-## Plugin helpers
+### Plugin helpers
 
 * thread
 
 * See also: Fluent::Plugin::Input
 
-## Fluent::Plugin::NATSInput
+### Fluent::Plugin::NATSInput
 
 * **host** (string) (optional): NATS server hostname
   * Default value: `localhost`
@@ -69,9 +69,10 @@ Setup the match output:
 * **reconnect_time_wait** (integer) (optional): The number of seconds to wait between reconnect tries
   * Default value: `2`
 
-# Suitable Queues
+## Suitable Queues
 
-## Components
+### Components
+
 * dea.>
 * cloudcontrollers.>
 * router.>
@@ -80,7 +81,8 @@ Setup the match output:
 * droplet.>
 * healthmanager.>
 
-## Services
+### Services
+
 * FilesystemaaS.>
 * AtmosaaS.>
 * MongoaaS.>
