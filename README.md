@@ -5,13 +5,6 @@
 [NATS](https://github.com/derekcollison/nats) plugin for
 [fluentd](https://github.com/fluent/fluentd) Event Collector.
 
-## Requirements
-
-| fluent-plugin-nats | Fluentd     | Ruby   |
-|--------------------|-------------|--------|
-| >= 1.0.0           | >= v0.14.20 | >= 2.1 |
-| < 1.0.0            | >= v0.12.0  | >= 1.9 |
-
 ##  Getting Started
 
 Setup the NATS input:
@@ -39,14 +32,6 @@ Setup the match output:
 
 ## Configuration
 
-### Plugin helpers
-
-* thread
-
-* See also: Fluent::Plugin::Input
-
-### Fluent::Plugin::NATSInput
-
 * **host** (string) (optional): NATS server hostname
   * Default value: `localhost`
 * **user** (string) (optional): Username for authorized connection
@@ -68,26 +53,3 @@ Setup the match output:
   * Default value: `150`
 * **reconnect_time_wait** (integer) (optional): The number of seconds to wait between reconnect tries
   * Default value: `2`
-
-## Suitable Queues
-
-### Components
-
-* dea.>
-* cloudcontrollers.>
-* router.>
-* cloudcontroller.>
-* vcap.>
-* droplet.>
-* healthmanager.>
-
-### Services
-
-* FilesystemaaS.>
-* AtmosaaS.>
-* MongoaaS.>
-* MyaaS.>
-* Neo4jaaS.>
-* AuaaS.>
-* RMQaaS.>
-* RaaS.>
