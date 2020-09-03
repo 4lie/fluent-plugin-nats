@@ -1,7 +1,5 @@
 # Fluent Plugin NATS
 
-[![Build Status](https://travis-ci.org/4lie/fluent-plugin-nats.svg?branch=master)](https://travis-ci.org/cloudfoundry-community/fluent-plugin-nats)
-
 [NATS](https://github.com/derekcollison/nats) plugin for
 [fluentd](https://github.com/fluent/fluentd) Event Collector.
 
